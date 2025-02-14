@@ -1,0 +1,48 @@
+
+.pagination {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+.pages {
+    display: flex;
+    gap: 20px;
+}
+
+.page {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    border-bottom: 3px solid rgba(0, 0, 0, 1); 
+    height: 25px;
+    opacity: 0.5;
+    width: 10px;
+    text-align: center;
+}
+
+.page.active {
+    opacity: 1;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    width: 22px;
+}
+
+.buttonLeft {
+    cursor: pointer;
+}
+
+.buttonRight {
+    cursor: pointer;
+}
+
+.buttonLeft.disabled {
+    display: none;
+}
+
+.buttonRight.disabled {
+    display: none; 
+}

@@ -1,0 +1,131 @@
+.product {
+    display: flex;
+    position: relative;
+    gap: 30px;
+    align-items: center;
+    padding: 0 0 30px 0;
+    border-bottom: 1px solid rgba(68, 68, 68, 10%);
+}
+
+.photo {
+    max-width: 130px;
+    width: 100%;
+    max-height: 140px;
+    height: 100%;
+}
+
+.productInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+}
+
+.title {
+    font-family: Josefin Sans, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.priceWrapper {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.priceAndQuantity {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.noOldPrice {
+    gap: 100px;
+}
+
+.price {
+    display: flex;
+    gap: 15px;
+}
+
+.oldPrice {
+    font-family: Josefin Sans, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 16px;  
+    text-decoration: line-through;
+    color: rgba(68, 68, 68, 1);
+}
+
+.currentPrice {
+    font-family: Josefin Sans, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.quantity {
+    max-width: 109px;
+    background: rgba(248, 248, 251, 1);
+    display: flex;
+    gap: 20px;
+    padding: 17px 23px;
+    align-items: center;
+    justify-content: center;
+}
+
+.countButton {
+    cursor: pointer;
+    color: rgba(153, 153, 153, 1);
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.count {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.totalPrice {
+    font-family: Josefin Sans, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 1);
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 3px 7px;
+    border: 1px solid rgba(0, 0, 0, 10%);
+    color: rgba(0, 0, 0, 10%);
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 515px) {
+    .product {
+        display: flex;
+        flex-direction: column;
+    }
+    .priceWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .priceAndQuantity {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .title {
+        text-align: center;
+    }
+}
