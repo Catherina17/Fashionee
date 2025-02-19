@@ -31,7 +31,6 @@ export const FilterProvider = ({ children }) => {
       filteredProducts = filteredProducts.filter((product) =>
         product.categories.includes(selectedCategory)
       )
-      console.log(selectedCategory, 'selectedCategory')
     }
 
     filteredProducts = filteredProducts.filter((product) => {

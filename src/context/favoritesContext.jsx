@@ -6,8 +6,6 @@ export const FavoritesContext = createContext()
 
 export const FavoritesProvider = ({ children }) => {
     const { getLocalStorage, setLocalStorage } = useLocalStorage()
-
-    console.log(getLocalStorage(PRODUCT_IN_FAVORITES_KEY), 'FROM LS')
     
     const [productsInFavorites, setProductsInFavorites] = useState(getLocalStorage(PRODUCT_IN_FAVORITES_KEY) || [])
 
